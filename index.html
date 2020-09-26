@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Introducción de HTML, CSS, JS</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.png">
+  </head>
+  <body>
+    <h1>Introducción de HTML, CSS, JS</h1>
+    <!-- EJERCICIO 1 -->
+    <h2>• EJERCICIO No. 1</h2>
+    <p>Realiza una página web que muestre tu horario personal de clases, estructurado en filas (horas del día) y columnas (días
+    de la semana), realízalo a través de tablas HTML y dales color y forma web tu gusto usando CSS.</p>
+
+    <table>
+      <tr>
+      <td>Horas</td>
+      <td>LUNES</td>
+      <td>MARTES</td>
+      <td>MIERCOLES</td>
+      <td>JUEVES</td>
+      <td>VIERNES</td>
+      </tr>
+
+      <tr>
+      <td>7:00 a 9:00</td>
+      <td>Estructura de datos</td>
+      <td>Estructura de datos</td>
+      <td> </td>
+      <td> </td>
+      <td>Estr. del pensamiento 3</td>
+      
+      </tr>
+
+      <tr>
+      <td>9:00 a 11:00 </td>
+      <td>Física 2</td>
+      <td>Programación 2</td>
+      <td>Física 2</td>
+      <td>Proyecto núcleo</td>
+      <td>Física 2</td>
+      </tr>
+
+      <tr>
+      <td>11:00 a 13:00</td>
+      <td>Matemáticas 2</td>
+      <td>Estadística y Probabilidad</td>
+      <td>Maremáticas 2</td>
+      <td>Estadística y Probabilidad</td>
+      <td>Matemáticas 2</td>
+      </tr>
+
+      <tr>
+      <td>14:00 a 16:00</td>
+      <td> </td>
+      <td> </td>
+      <td>Programación 2</td>
+      <td>Programación 2</td>
+      <td> </td>
+      </tr>
+
+    </table>
+    <br>
+
+    <!-- EJERCICIO 2 -->
+    <h2>• EJERCICIO No. 2</h2>
+    <p>Sobre el resultado, debe crear un archivo CSS para que cumpla con la estructura y colores mostrados en la figura al
+    costado. Debe tener en cuenta que, adicional a la forma, posición y colores, cuando se pase el cursor del ratón por
+    cualquiera de los bloques, se debe producir un degradado en el color de la caja.</p>
+    <h3>Posicionamiento de bloques o cajas</h3>
+    <div id="contenido">
+      <div id="rojo">Rojo</div>
+      <div id="azul">Azul</div>
+      <div id="negro">Negro</div>
+      <div id="amarillo">Amarillo</div>
+      <div id="verde">Verde</div>
+    </div>
+    <br>
+
+  <!-- EJERCICIO 3 -->
+  <h2>• EJERCICIO No. 3</h2>
+  <p>Escriba una página web que le permita ingresar al usuario 5 números y usando Javascript establezca cuál de esos números
+  es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
+  únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+<!-- action: quien se encarga de procesar los datos que enviaremos -->
+<!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
+  <form>
+    <label for="numeros">Ingrese 5 numeros: </label>
+    <input type="text" name= "numeros" id = "numeros" placeholder="Escribe los 5 numeros" maxlength="5">
+    <!-- <input type="button" id = "btnEnviarDatos" value="Consultar" > -->
+    <button type="button" id = "btnEnviarDatos">Consultar</button>
+    <script src="script.js"></script>
+    <label for="resultadoNumeros">Resultados: </label>
+    <!-- readonly = readonly : para que solo funcione para mostrar datos -->
+    <textarea name="textAreaNumeros" id = "resultadoNumeros" placeholder="Sus resultados son:"></textarea>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </body>
+</html>
