@@ -165,3 +165,112 @@ input[type="submit"]:hover {
 }
 
 /* 4 EJERCICIO */
+/* 5 EJERCICIO */
+.estiloRecuadroEje5{
+  width: 210px;
+  height: 300px;
+background-image:url("imagenes/fondoVocales.jpg");
+margin: auto;
+}
+.AreaEje5{
+  background: #DAEAF1 ;
+  font-family:"Times New Roman" ;
+  font-size: 20px;
+  border:#2AA1DD 8px outset;
+}
+.botonEje5{
+background: #eb94d0;
+  /* Crear degradados */
+background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+
+font-family:"Times New Roman" ;
+font-size: 20px;
+
+color: #fafafa;
+padding: 10px;
+text-decoration: none;
+}
+.inputEje5{
+  font-family:"Times New Roman" ;
+  font-size: 20px;
+
+}
+/* 7 EJERCICIO */
+.eje7{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family:"Times New Roman" ;
+  color: white;
+}
+.estiloRecuadroEje7{
+  width: 500px;
+  height: 350px;
+  background: #24303c;
+  background-image:url("imagenes/fondo formulario.jpg");
+  padding: 20px;
+  margin: auto;
+  border-radius:12px;
+  box-shadow: 7px 15px 40px #000;
+
+}
+
+.botonEje7{
+font-family:"Times New Roman" ;
+font-size: 20px;
+
+}
+.inputEje7{
+width:280px;
+height: 20px;
+font-family:"Times New Roman";
+font-size: 20px;
+padding: 20px;
+border-radius: 8px;
+margin-bottom: 6px;
+
+}
+.botonEje7{
+width: 100%;
+border:none;
+padding:3px;
+border-radius: 8px;
+}
+.seleccionEje7{
+width:280px;
+height: 45px;
+border-radius: 8px;
+font-family:"Times New Roman" ;
+font-size: 20px;
+}
+.Ventana{
+  background: -prefix-linear-gradient(top, green,yellow);
+  background: linear-gradient(to bottom,green,yellow);
+  width:300px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  display: none;
+}
+.cerrar{
+position: absolute;
+right:10px;
+top:10px;
+}
+.AreaEje7{
+  position: relative;
+  width: 265px;
+  height: 120px;
+  background: transparent;
+  color: black;
+  font-family:"Times New Roman";
+  font-size: 20px;
+  border: none;
+}

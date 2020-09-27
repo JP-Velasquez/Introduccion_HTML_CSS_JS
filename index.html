@@ -95,7 +95,56 @@
     <!-- readonly = readonly : para que solo funcione para mostrar datos -->
     <textarea name="textAreaNumeros" id = "resultadoNumeros" placeholder="Sus resultados son:"></textarea>
   </form>
+  <!-- EJERCICIO 5 -->
+    <h2>• EJERCICIO No. 5</h2>
+    <p>Escriba una página web que pida una frase y usando Javascript, indique cuántas veces aparece cada una de las vocales.
+  Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <!-- action: quien se encarga de procesar los datos que enviaremos -->
+  <!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
+    <form class = estiloRecuadroEje5>
 
+      <input class=inputEje5 type="text" name= "frase" id = "frase" placeholder="Escribe una frase">
+      <button type="button" class=botonEje5 id = "btnContarVocales">Contar Vocales</button>
+      <br>
+      <br>
+      <textarea  name="txtArea" class=AreaEje5 id ="resultadoVocales" placeholder="El número de vocales es:" disabled rows="6"></textarea>
+      <script src="script.js"></script>
+    </form>
+    <!-- EJERCICIO 7 -->
+    <h2>• EJERCICIO No. 7</h2>
+    <p>Escriba una página web que se conforme de un formulario en donde solicite (nombre(s), apellido(s), número de
+  identificación y permita seleccionar de una lista la carrera que estudia: INGENIERÍA, MEDICINA, BIOLOGÍA, ECONOMÍA,
+  MATEMÁTICAS, LITERATURA, EDUCACIÓN). Cuando la persona diligencie la información solicitada (en su totalidad), debe
+  aparecer un mensaje emergente en el navegador indicando la información ingresada. Juegue con CSS para que su HTML
+  sea lo más llamativo posible.</p>
+
+    <form class = estiloRecuadroEje7>
+      <h3 class=eje7> Formulario</h3>
+      <div class="Ventana" id=ventana>
+        <div class="cerrar" id=cerrar><a href="Javascript:cerrar()">
+          <img src="imagenes/cancelar.png"></a>
+        </div>
+        <textarea  name="txtArea" class=AreaEje7 id ="resultadoDatos" disabled rows="5"></textarea>
+
+      </div>
+      <input class=inputEje7 type="text" name= "Nombre" id = "Nombres" placeholder="Ingrese su nombre" required>
+      <input class=inputEje7 type="text" name= "Apellido" id = "Apellidos" placeholder="Ingrese su apellido" required>
+      <input class=inputEje7 type="number" name= "Identificacion" id = "Identificacion" placeholder="Ingrese su identificacion" required >
+        <select class= seleccionEje7 id="carreras">
+          <option>Seleccione su carrera</option>
+          <option>Ingeniería</option>
+          <option>Medicina</option>
+          <option>Biología</option>
+          <option>Economía</option>
+          <option>Matemáticas</option>
+          <option>Literatura</option>
+          <option>Educación</option>
+        </select>
+      <br>
+      <br>
+      <button type="button" class=botonEje7 id ="btnEnviar">Enviar</button>
+      <script src="script.js"></script>
+    </form>
   <br>
   <br>
   <br>
