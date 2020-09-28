@@ -7,11 +7,10 @@ function ejercicio3() {
 }
 
 // Ejercicio 5
-var botonVocales = document.getElementById("btnContarVocales");
-botonVocales.addEventListener("click", ejercicio5);
-
+var boton5 = document.getElementById("btnContarVocales");
+boton5.addEventListener("click", ejercicio5);
 function ejercicio5() {
-  var input = document.getElementById("frase").value;
+  var input = document.getElementById("fraseEje5").value;
   vector = input.toLowerCase().split("");
   var a = e = i = o = u = 0;
   for (k = 0; k < vector.length; k++) {
@@ -36,9 +35,8 @@ function ejercicio5() {
   document.getElementById("resultadoVocales").value = texto;
 }
 //Ejercicio 7
-var botonEnviar = document.getElementById("btnEnviar");
-botonEnviar.addEventListener("click", ejercicio7);
-
+var boton7 = document.getElementById("btnEnviarEje7");
+boton7.addEventListener("click", ejercicio7);
 function ejercicio7() {
   var nombre = document.getElementById("Nombres").value;
   var apellido = document.getElementById("Apellidos").value;

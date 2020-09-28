@@ -263,7 +263,7 @@ input[type="button"]:hover {
   background-color: white;
 }
 .botonEje5{
-  width: 85%;
+width: 85%;
 background: #eb94d0;
   /* Crear degradados */
 background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
