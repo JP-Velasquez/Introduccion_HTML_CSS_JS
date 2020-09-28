@@ -142,42 +142,71 @@ div #verde:hover {
 }
 
 /* EJERCICIO 3 */
-form {
-  width: 30%;
-  border: 1px solid black;
-  margin: 20px;
+.formularioEjer3 {
+  width: 300px;
+  height: 370px;
+  background-image:url("imagenes/ejer3.png");
+  border: 2px solid black;
+  margin: auto;
   padding: 20px;
+  padding-bottom: 80px;
 }
 
-label {
-  font-size: 12px;
+.tituloEjer3{
+  font-size: 19.5px;
   display: block;
   width: 100%;
+  font-weight: bold;
 }
 
-textarea {
+.subTituloEjer3{
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-decoration: underline;
+}
+
+#tituloPulseBtnEjer3{
+  margin-bottom: 10px;
+}
+
+#tituloResultadoEjer3{
+  margin-top: 10px
+}
+
+.tituloBtnEjer3{
+  font-size: 17px;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+textarea{
   resize: none;
+  height: 70px;
 }
 
-input, textarea {
-  margin-bottom: 20px;
+input, textarea{
+  margin-bottom: 10px;
+  font-size: 18px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
-  border: 1px solid #0c70df;
+  border: 3.5px solid #0c9800;
 }
 
-input[type="submit"] {
-  margin-bottom: 0;
+input[type="button"]{
+  font-size: 14px;
+  margin: 0px;
   background: #0c70df;
   color: white;
   border: none;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background: #1383ff;
   cursor: pointer;
 }

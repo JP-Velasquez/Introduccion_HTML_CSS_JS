@@ -84,19 +84,23 @@
   <!-- EJERCICIO 3 -->
   <h2>• EJERCICIO No. 3</h2>
   <p>Escriba una página web que le permita ingresar al usuario 5 números y usando Javascript establezca cuál de esos números
-    es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
-    únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
-  <!-- action: quien se encarga de procesar los datos que enviaremos -->
-  <!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
-  <form>
-    <label for="numeros">Ingrese 5 numeros: </label>
-    <input type="text" name="numeros" id="numeros" placeholder="Escribe los 5 numeros" maxlength="5">
-    <!-- <input type="button" id = "btnEnviarDatos" value="Consultar" > -->
-    <button type="button" id="btnEnviarDatos">Consultar</button>
-    <script src="script.js"></script>
-    <label for="resultadoNumeros">Resultados: </label>
+  es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
+  únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <form class="formularioEjer3">
+    <label class="tituloEjer3" for="numerosIngresados">• Ingrese 5 numeros:</label>
+    <input type="text" id = "numerosIngresados" placeholder="Escribe los 5 numeros">
+    <label class="subTituloEjer3" id="tituloPulseBtnEjer3">Pulse los botones para:</label>
+    <label class="tituloBtnEjer3" for="btnVerMenor">- Ver el numero menor ingresado: ↓↓</label>
+    <input type="button" id = "btnVerMenor" value="Ver Numero Menor" >
+    <label class="tituloBtnEjer3" for="btnVerMayor">- Ver el numero mayor ingresado: ↓↓</label>
+    <input type="button" id = "btnVerMayor" value="Ver Numero Mayor" >
+    <label class="tituloBtnEjer3" for="btnCantPrimos">- Ver la cantidad de numeros primos: ↓↓</label>
+    <input type="button" id = "btnCantPrimos" value="Cantidad De Numeros Primos">
+    <label class="tituloBtnEjer3" for="btnPromedioPares">- Ver el promedio de numeros pares: ↓↓</label>
+    <input type="button" id = "btnPromedioPares" value="Promedio De Numeros Pares">
+    <label class="subTituloEjer3" id="tituloResultadoEjer3" for="resultadoNumeros">Resultados: </label>
     <!-- readonly = readonly : para que solo funcione para mostrar datos -->
-    <textarea name="textAreaNumeros" id="resultadoNumeros" placeholder="Sus resultados son:"></textarea>
+    <textarea name="textAreaNumeros" id = "resultadoNumeros" readonly = readonly placeholder="Sus resultados son:"></textarea>
   </form>
 
   <!-- EJERCICIO 4 -->
