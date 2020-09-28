@@ -10,7 +10,7 @@ function ejercicio3() {
 var boton5 = document.getElementById("btnContarVocales");
 boton5.addEventListener("click", ejercicio5);
 function ejercicio5() {
-  var input = document.getElementById("fraseEje5").value;
+  var input = document.getElementById("frase").value;
   vector = input.toLowerCase().split("");
   var a = e = i = o = u = 0;
   for (k = 0; k < vector.length; k++) {
@@ -34,6 +34,7 @@ function ejercicio5() {
   texto = letraA + letraE + letraI + letraO + letraU;
   document.getElementById("resultadoVocales").value = texto;
 }
+
 //Ejercicio 7
 var boton7 = document.getElementById("btnEnviarEje7");
 boton7.addEventListener("click", ejercicio7);
@@ -49,7 +50,6 @@ function ejercicio7() {
     document.getElementById("ventana").style.display = "block";
     document.getElementById("resultadoDatos").value = texto;
   }
-
 }
 
 function cerrar() {
