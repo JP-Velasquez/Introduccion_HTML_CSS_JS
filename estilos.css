@@ -145,48 +145,48 @@ div #verde:hover {
 .formularioEjer3 {
   width: 300px;
   height: 370px;
-  background-image:url("imagenes/ejer3.png");
+  background-image: url("imagenes/ejer3.png");
   border: 2px solid black;
   margin: auto;
   padding: 20px;
   padding-bottom: 80px;
 }
 
-.tituloEjer3{
+.tituloEjer3 {
   font-size: 19.5px;
   display: block;
   width: 100%;
   font-weight: bold;
 }
 
-.subTituloEjer3{
+.subTituloEjer3 {
   font-size: 18px;
   display: block;
   width: 100%;
   text-decoration: underline;
 }
 
-#tituloPulseBtnEjer3{
+#tituloPulseBtnEjer3 {
   margin-bottom: 10px;
 }
 
-#tituloResultadoEjer3{
+#tituloResultadoEjer3 {
   margin-top: 10px
 }
 
-.tituloBtnEjer3{
+.tituloBtnEjer3 {
   font-size: 17px;
   display: block;
   width: 100%;
   margin: auto;
 }
 
-textarea{
+textarea {
   resize: none;
   height: 70px;
 }
 
-input, textarea{
+input, textarea {
   margin-bottom: 10px;
   font-size: 18px;
   width: 100%;
@@ -198,7 +198,7 @@ input:focus, textarea:focus {
   border: 3.5px solid #0c9800;
 }
 
-input[type="button"]{
+input[type="button"] {
   font-size: 14px;
   margin: 0px;
   background: #0c70df;
@@ -212,6 +212,28 @@ input[type="button"]:hover {
 }
 
 /* 4 EJERCICIO */
+.form_4 label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form_4 textarea {
+  background-color: #FCDEC9;
+  border-color: black;
+  border-radius: 4px;
+}
+
+.form_4 button {
+  background-color: #D4716C;
+  border-color: #D4716C;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.form_4 {
+  background-color: #ECC8B0;
+}
+
 /* 5 EJERCICIO */
 .estiloRecuadroEje5 {
   width: 210px;
@@ -245,6 +267,39 @@ input[type="button"]:hover {
 .inputEje5 {
   font-family: "Times New Roman";
   font-size: 20px;
+}
+
+/* 6 EJERCICIO */
+.calculadora_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 85px);
+  grid-auto-rows: 25px;
+  grid-gap: 1rem;
+  justify-content: space-between;
+}
+
+.botonResult {
+  background-color: #FE8611;
+  border-color: #FE8611;
+  border-radius: 5px;
+}
+
+.botonIgual {
+  background-color: #D7A099;
+  border-color: #D7A099;
+  border-radius: 5px;
+}
+
+.botonMas, .botonDividr, .botonMenos, .botonPor {
+  background-color: #57BAAC;
+  border-color: #57BAAC;
+  border-radius: 5px;
+}
+
+.boton0, .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8, .boton9 {
+  background-color: #A4BCDF;
+  border-color: #A4BCDF;
+  border-radius: 5px;
 }
 
 /* 7 EJERCICIO */
@@ -325,58 +380,4 @@ input[type="button"]:hover {
   font-family: "Times New Roman";
   font-size: 20px;
   border: none;
-}
-
-.form_4 {
-  background-color: #ECC8B0;
-}
-
-.form_4 label {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.form_4 textarea {
-  background-color: #FCDEC9;
-  border-color: black;
-  border-radius: 4px;
-}
-
-.form_4 button {
-  background-color: #D4716C;
-  border-color: #D4716C;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-.calculadora_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 85px);
-  grid-auto-rows: 25px;
-  grid-gap: 1rem;
-  justify-content: space-between;
-}
-
-.botonResult {
-  background-color: #FE8611;
-  border-color: #FE8611;
-  border-radius: 5px;
-}
-
-.botonIgual {
-  background-color: #D7A099;
-  border-color: #D7A099;
-  border-radius: 5px;
-}
-
-.botonMas, .botonDividr, .botonMenos, .botonPor {
-  background-color: #57BAAC;
-  border-color: #57BAAC;
-  border-radius: 5px;
-}
-
-.boton0, .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8, .boton9 {
-  background-color: #A4BCDF;
-  border-color: #A4BCDF;
-  border-radius: 5px;
 }
