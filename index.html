@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Introducción de HTML, CSS, JS</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.png">
-  </head>
-  <body>
-    <h1>Introducción de HTML, CSS, JS</h1>
-    <!-- EJERCICIO 1 -->
-    <h2>• EJERCICIO No. 1</h2>
-    <p>Realiza una página web que muestre tu horario personal de clases, estructurado en filas (horas del día) y columnas (días
+
+<head>
+  <meta charset="utf-8">
+  <title>Introducción de HTML, CSS, JS</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.png">
+</head>
+
+<body>
+  <h1>Introducción de HTML, CSS, JS</h1>
+  <!-- EJERCICIO 1 -->
+  <h2>• EJERCICIO No. 1</h2>
+  <p>Realiza una página web que muestre tu horario personal de clases, estructurado en filas (horas del día) y columnas (días
     de la semana), realízalo a través de tablas HTML y dales color y forma web tu gusto usando CSS.</p>
 
-    <table>
-      <tr>
+  <table>
+    <tr>
       <td>Horas</td>
       <td>LUNES</td>
       <td>MARTES</td>
       <td>MIERCOLES</td>
       <td>JUEVES</td>
       <td>VIERNES</td>
-      </tr>
+    </tr>
 
-      <tr>
+    <tr>
       <td>7:00 a 9:00</td>
       <td>Estructura de datos</td>
       <td>Estructura de datos</td>
@@ -31,120 +33,164 @@
       <td> </td>
       <td>Estr. del pensamiento 3</td>
 
-      </tr>
+    </tr>
 
-      <tr>
+    <tr>
       <td>9:00 a 11:00 </td>
       <td>Física 2</td>
       <td>Programación 2</td>
       <td>Física 2</td>
       <td>Proyecto núcleo</td>
       <td>Física 2</td>
-      </tr>
+    </tr>
 
-      <tr>
+    <tr>
       <td>11:00 a 13:00</td>
       <td>Matemáticas 2</td>
       <td>Estadística y Probabilidad</td>
       <td>Matemáticas 2</td>
       <td>Estadística y Probabilidad</td>
       <td>Matemáticas 2</td>
-      </tr>
+    </tr>
 
-      <tr>
+    <tr>
       <td>14:00 a 16:00</td>
       <td> </td>
       <td> </td>
       <td>Programación 2</td>
       <td>Programación 2</td>
       <td> </td>
-      </tr>
+    </tr>
 
-    </table>
-    <br>
+  </table>
+  <br>
 
-    <!-- EJERCICIO 2 -->
-    <h2>• EJERCICIO No. 2</h2>
-    <p>Sobre el resultado, debe crear un archivo CSS para que cumpla con la estructura y colores mostrados en la figura al
+  <!-- EJERCICIO 2 -->
+  <h2>• EJERCICIO No. 2</h2>
+  <p>Sobre el resultado, debe crear un archivo CSS para que cumpla con la estructura y colores mostrados en la figura al
     costado. Debe tener en cuenta que, adicional a la forma, posición y colores, cuando se pase el cursor del ratón por
     cualquiera de los bloques, se debe producir un degradado en el color de la caja.</p>
-    <h3>Posicionamiento de bloques o cajas</h3>
-    <div id="contenido">
-      <div id="rojo">Rojo</div>
-      <div id="azul">Azul</div>
-      <div id="negro">Negro</div>
-      <div id="amarillo">Amarillo</div>
-      <div id="verde">Verde</div>
-    </div>
-    <br>
+  <h3>Posicionamiento de bloques o cajas</h3>
+  <div id="contenido">
+    <div id="rojo">Rojo</div>
+    <div id="azul">Azul</div>
+    <div id="negro">Negro</div>
+    <div id="amarillo">Amarillo</div>
+    <div id="verde">Verde</div>
+
+  </div>
+  <br>
 
   <!-- EJERCICIO 3 -->
   <h2>• EJERCICIO No. 3</h2>
   <p>Escriba una página web que le permita ingresar al usuario 5 números y usando Javascript establezca cuál de esos números
-  es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
-  únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
-<!-- action: quien se encarga de procesar los datos que enviaremos -->
-<!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
+    es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
+    únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <!-- action: quien se encarga de procesar los datos que enviaremos -->
+  <!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
   <form>
     <label for="numeros">Ingrese 5 numeros: </label>
-    <input type="text" name= "numeros" id = "numeros" placeholder="Escribe los 5 numeros" maxlength="5">
+    <input type="text" name="numeros" id="numeros" placeholder="Escribe los 5 numeros" maxlength="5">
     <!-- <input type="button" id = "btnEnviarDatos" value="Consultar" > -->
-    <button type="button" id = "btnEnviarDatos">Consultar</button>
+    <button type="button" id="btnEnviarDatos">Consultar</button>
     <script src="script.js"></script>
     <label for="resultadoNumeros">Resultados: </label>
     <!-- readonly = readonly : para que solo funcione para mostrar datos -->
-    <textarea name="textAreaNumeros" id = "resultadoNumeros" placeholder="Sus resultados son:"></textarea>
+    <textarea name="textAreaNumeros" id="resultadoNumeros" placeholder="Sus resultados son:"></textarea>
   </form>
+
+  <!-- EJERCICIO 4 -->
+  <h2>• EJERCICIO No. 4</h2>
+  <p>Escriba una página web que le permita al usuario ingresar un texto largo de mínimo 5 palabras y usando Javascript cuente el número de palabras ingresado por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <form class="form_4">
+    <label for="label_uno_4">Ingrese una frase de mínimo cinco palabras: </label>
+    <textarea name="textArea4" rows="10" cols="40"></textarea>
+    <button type="button" name="buttonValidar">Validar</button>
+  </form>
+
+
   <!-- EJERCICIO 5 -->
-    <h2>• EJERCICIO No. 5</h2>
-    <p>Escriba una página web que pida una frase y usando Javascript, indique cuántas veces aparece cada una de las vocales.
-  Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <h2>• EJERCICIO No. 5</h2>
+  <p>Escriba una página web que pida una frase y usando Javascript, indique cuántas veces aparece cada una de las vocales.
+    Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
   <!-- action: quien se encarga de procesar los datos que enviaremos -->
   <!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
-    <form class = estiloRecuadroEje5>
+  <form class=estiloRecuadroEje5>
 
-      <input class=inputEje5 type="text" name= "frase" id = "frase" placeholder="Escribe una frase">
-      <button type="button" class=botonEje5 id = "btnContarVocales">Contar Vocales</button>
-      <br>
-      <br>
-      <textarea  name="txtArea" class=AreaEje5 id ="resultadoVocales" placeholder="El número de vocales es:" disabled rows="6"></textarea>
-      <script src="script.js"></script>
-    </form>
-    <!-- EJERCICIO 7 -->
-    <h2>• EJERCICIO No. 7</h2>
-    <p>Escriba una página web que se conforme de un formulario en donde solicite (nombre(s), apellido(s), número de
-  identificación y permita seleccionar de una lista la carrera que estudia: INGENIERÍA, MEDICINA, BIOLOGÍA, ECONOMÍA,
-  MATEMÁTICAS, LITERATURA, EDUCACIÓN). Cuando la persona diligencie la información solicitada (en su totalidad), debe
-  aparecer un mensaje emergente en el navegador indicando la información ingresada. Juegue con CSS para que su HTML
-  sea lo más llamativo posible.</p>
+    <input class=inputEje5 type="text" name="frase" id="frase" placeholder="Escribe una frase">
+    <button type="button" class=botonEje5 id="btnContarVocales">Contar Vocales</button>
+    <br>
+    <br>
+    <textarea name="txtArea" class=AreaEje5 id="resultadoVocales" placeholder="El número de vocales es:" disabled rows="6"></textarea>
+    <script src="script.js"></script>
+  </form>
 
-    <form class = estiloRecuadroEje7>
-      <h3 class=eje7> Formulario</h3>
-      <div class="Ventana" id=ventana>
-        <div class="cerrar" id=cerrar><a href="Javascript:cerrar()">
-          <img src="imagenes/cancelar.png"></a>
-        </div>
-        <textarea  name="txtArea" class=AreaEje7 id ="resultadoDatos" disabled rows="5"></textarea>
+  <!-- EJERCICIO 6 -->
+  <h2>• EJERCICIO No. 6</h2>
+  <p>Escriba una página web que contenga una calculadora funcional
+    como la mostrada en la imagen. Juegue con CSS para que su HTML
+    sea lo más llamativo posible.</p>
+  <form class="form_calculadora">
 
+    <div class="calculadora">
+      <input type="text" class="inputCalculadora">
+      <div class="calculadora_grid" id="calculadora_grid">
+        <button type="button" class="boton1">1</button>
+        <button type="button" class="boton2">2</button>
+        <button type="button" class="boton3">3</button>
+        <button type="button" class="botonMas">+</button>
+        <button type="button" class="boton4">4</button>
+        <button type="button" class="boton5">5</button>
+        <button type="button" class="boton6">6</button>
+        <button type="button" class="botonMenos">-</button>
+        <button type="button" class="boton7">7</button>
+        <button type="button" class="boton8">8</button>
+        <button type="button" class="boton9">9</button>
+        <button type="button" class="botonPor">*</button>
+        <button type="button" class="boton0">0</button>
+        <button type="button" class="botonResult">C</button>
+        <button type="button" class="botonIgual">=</button>
+        <button type="button" class="botonDividr">/</button>
       </div>
-      <input class=inputEje7 type="text" name= "Nombre" id = "Nombres" placeholder="Ingrese su nombre" required>
-      <input class=inputEje7 type="text" name= "Apellido" id = "Apellidos" placeholder="Ingrese su apellido" required>
-      <input class=inputEje7 type="number" name= "Identificacion" id = "Identificacion" placeholder="Ingrese su identificacion" required >
-        <select class= seleccionEje7 id="carreras">
-          <option>Seleccione su carrera</option>
-          <option>Ingeniería</option>
-          <option>Medicina</option>
-          <option>Biología</option>
-          <option>Economía</option>
-          <option>Matemáticas</option>
-          <option>Literatura</option>
-          <option>Educación</option>
-        </select>
-      <br>
-      <br>
-      <button type="button" class=botonEje7 id ="btnEnviar">Enviar</button>
-      <script src="script.js"></script>
-    </form>
+    </div>
+
+  </form>
+
+  <!-- EJERCICIO 7 -->
+  <h2>• EJERCICIO No. 7</h2>
+  <p>Escriba una página web que se conforme de un formulario en donde solicite (nombre(s), apellido(s), número de
+    identificación y permita seleccionar de una lista la carrera que estudia: INGENIERÍA, MEDICINA, BIOLOGÍA, ECONOMÍA,
+    MATEMÁTICAS, LITERATURA, EDUCACIÓN). Cuando la persona diligencie la información solicitada (en su totalidad), debe
+    aparecer un mensaje emergente en el navegador indicando la información ingresada. Juegue con CSS para que su HTML
+    sea lo más llamativo posible.</p>
+
+  <form class=estiloRecuadroEje7>
+    <h3 class=eje7> Formulario</h3>
+    <div class="Ventana" id=ventana>
+      <div class="cerrar" id=cerrar><a href="Javascript:cerrar()">
+          <img src="imagenes/cancelar.png"></a>
+      </div>
+      <textarea name="txtArea" class=AreaEje7 id="resultadoDatos" disabled rows="5"></textarea>
+
+    </div>
+    <input class=inputEje7 type="text" name="Nombre" id="Nombres" placeholder="Ingrese su nombre" required>
+    <input class=inputEje7 type="text" name="Apellido" id="Apellidos" placeholder="Ingrese su apellido" required>
+    <input class=inputEje7 type="number" name="Identificacion" id="Identificacion" placeholder="Ingrese su identificacion" required>
+    <select class=seleccionEje7 id="carreras">
+      <option>Seleccione su carrera</option>
+      <option>Ingeniería</option>
+      <option>Medicina</option>
+      <option>Biología</option>
+      <option>Economía</option>
+      <option>Matemáticas</option>
+      <option>Literatura</option>
+      <option>Educación</option>
+    </select>
+    <br>
+    <br>
+    <button type="button" class=botonEje7 id="btnEnviar">Enviar</button>
+    <script src="script.js"></script>
+  </form>
   <br>
   <br>
   <br>
@@ -155,5 +201,6 @@
   <br>
   <br>
   <br>
-  </body>
+</body>
+
 </html>
