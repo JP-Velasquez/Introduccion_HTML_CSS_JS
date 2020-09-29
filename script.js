@@ -142,7 +142,121 @@ function ejercicio5() {
   texto = letraA + letraE + letraI + letraO + letraU;
   document.getElementById("resultadoVocales").value = texto;
 }
+
 // Ejercicio 6
+var numero1;
+var numero2;
+var operacion;
+
+var boton_ej6_1 = document.getElementById("boton1");
+var boton_ej6_2 = document.getElementById("boton2");
+var boton_ej6_3 = document.getElementById("boton3");
+var boton_ej6_mas = document.getElementById("botonMas");
+var boton_ej6_4 = document.getElementById("boton4");
+var boton_ej6_5 = document.getElementById("boton5");
+var boton_ej6_6 = document.getElementById("boton6");
+var boton_ej6_menos = document.getElementById("botonMenos");
+var boton_ej6_7 = document.getElementById("boton7");
+var boton_ej6_8 = document.getElementById("boton8");
+var boton_ej6_9 = document.getElementById("boton9");
+var boton_ej6_por = document.getElementById("botonPor");
+var boton_ej6_0 = document.getElementById("boton0");
+var boton_ej6_reset = document.getElementById("botonReset");
+var boton_ej6_igual = document.getElementById("botonIgual");
+var boton_ej6_dividir = document.getElementById("botonDividr");
+
+var resultado = document.getElementById("resultadoCalculadora");
+
+boton_ej6_1.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "1";
+}
+boton_ej6_2.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "2";
+}
+boton_ej6_3.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "3";
+}
+boton_ej6_4.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "4";
+}
+boton_ej6_5.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "5";
+}
+boton_ej6_6.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "6";
+}
+boton_ej6_7.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "7";
+}
+boton_ej6_8.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "8";
+}
+boton_ej6_9.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "9";
+}
+boton_ej6_0.onclick = function(e) {
+  resultado.textContent = resultado.textContent + "0";
+}
+boton_ej6_reset.onclick = function(e) {
+  resetear();
+}
+boton_ej6_mas.onclick = function(e) {
+  numero1 = resultado.textContent;
+  operacion = "+";
+  limpiar();
+}
+boton_ej6_menos.onclick = function(e) {
+  numero1 = resultado.textContent;
+  operacion = "-";
+  limpiar();
+}
+boton_ej6_por.onclick = function(e) {
+  numero1 = resultado.textContent;
+  operacion = "*";
+  limpiar();
+}
+boton_ej6_dividir.onclick = function(e) {
+  numero1 = resultado.textContent;
+  operacion = "/";
+  limpiar();
+}
+boton_ej6_igual.onclick = function(e) {
+  numero2 = resultado.textContent;
+  resolver();
+}
+
+// Poner vacio el resultado
+function limpiar() {
+  resultado.textContent = "";
+}
+
+// Resetar las variables operandoA, operandoB y operacion
+function resetear() {
+  resultado.textContent = "";
+  numero1 = 0;
+  numero2 = 0;
+  operacion = "";
+}
+
+function resolver() {
+  var respuesta = 0;
+  switch (operacion) {
+    case "+":
+      respuesta = parseFloat(numero1) + parseFloat(numero2);
+      break;
+    case "-":
+      respuesta = parseFloat(numero1) - parseFloat(numero2);
+      break;
+    case "*":
+      respuesta = parseFloat(numero1) * parseFloat(numero2);
+      break;
+    case "/":
+      respuesta = parseFloat(numero1) / parseFloat(numero2);
+      break;
+  }
+  resetear();
+  resultado.textContent = respuesta;
+}
 
 // Ejercicio 7
 var boton7 = document.getElementById("btnEnviarEje7");
