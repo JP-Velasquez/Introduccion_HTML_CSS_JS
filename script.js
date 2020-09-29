@@ -99,6 +99,7 @@ function ejercicio4() {
 }
 
 // Ejercicio 5
+var boton5 = document.getElementById("btnContarVocales");
 boton5.addEventListener("click", ejercicio5);
 function ejercicio5() {
   var input = document.getElementById("fraseEje5").value;
@@ -128,6 +129,7 @@ function ejercicio5() {
 // Ejercicio 6
 
 // Ejercicio 7
+var boton7 = document.getElementById("btnEnviarEje7");
 boton7.addEventListener("click", ejercicio7);
 function ejercicio7() {
   var nombre = document.getElementById("Nombres").value;
