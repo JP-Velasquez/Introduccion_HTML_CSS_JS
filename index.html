@@ -84,23 +84,23 @@
   <!-- EJERCICIO 3 -->
   <h2>• EJERCICIO No. 3</h2>
   <p>Escriba una página web que le permita ingresar al usuario 5 números y usando Javascript establezca cuál de esos números
-  es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
-  únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+    es el menor, cuál es el menor, cuál es el mayor, cuántos números primos hay y cuál es el promedio de los números
+    únicamente pares ingresados por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
   <form class="formularioEjer3">
     <label class="tituloEjer3" for="numerosIngresados">• Ingrese 5 numeros:</label>
-    <input type="text" id = "numerosIngresados" placeholder="Escribe los 5 numeros">
+    <input type="text" id="numerosIngresados" placeholder="Escribe los 5 numeros">
     <label class="subTituloEjer3" id="tituloPulseBtnEjer3">Pulse los botones para:</label>
     <label class="tituloBtnEjer3" for="btnVerMenor">- Ver el numero menor ingresado: ↓↓</label>
-    <input type="button" id = "btnVerMenor" value="Ver Numero Menor" >
+    <input type="button" id="btnVerMenor" value="Ver Numero Menor">
     <label class="tituloBtnEjer3" for="btnVerMayor">- Ver el numero mayor ingresado: ↓↓</label>
-    <input type="button" id = "btnVerMayor" value="Ver Numero Mayor" >
+    <input type="button" id="btnVerMayor" value="Ver Numero Mayor">
     <label class="tituloBtnEjer3" for="btnCantPrimos">- Ver la cantidad de numeros primos: ↓↓</label>
-    <input type="button" id = "btnCantPrimos" value="Cantidad De Numeros Primos">
+    <input type="button" id="btnCantPrimos" value="Cantidad De Numeros Primos">
     <label class="tituloBtnEjer3" for="btnPromedioPares">- Ver el promedio de numeros pares: ↓↓</label>
-    <input type="button" id = "btnPromedioPares" value="Promedio De Numeros Pares">
+    <input type="button" id="btnPromedioPares" value="Promedio De Numeros Pares">
     <label class="subTituloEjer3" id="tituloResultadoEjer3" for="resultadoNumeros">Resultados: </label>
     <!-- readonly = readonly : para que solo funcione para mostrar datos -->
-    <textarea name="textAreaNumeros" id = "resultadoNumeros" readonly = readonly placeholder="Sus resultados son:"></textarea>
+    <textarea name="textAreaNumeros" id="resultadoNumeros" readonly=readonly placeholder="Sus resultados son:"></textarea>
   </form>
 
   <!-- EJERCICIO 4 -->
@@ -108,29 +108,34 @@
   <p>Escriba una página web que le permita al usuario ingresar un texto largo de mínimo 5 palabras y usando Javascript cuente el número de palabras ingresado por el usuario. Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
   <form class="form_4">
     <label for="label_uno_4">Ingrese una frase de mínimo cinco palabras: </label>
-    <textarea name="textArea4" rows="10" cols="40"></textarea>
-    <button type="button" name="buttonValidar">Validar</button>
+    <textarea name="textArea4" class="textArea4" id="textArea4" rows="10" cols="40"></textarea>
+    <button type="button" class="button4" id="button4" name="buttonValidar">Validar</button>
+
+    <div class="div_interno_4">
+      <label for="label_dos_4">Resultado: </label>
+      <textarea name="textAResult4" class="textAResult4" id="textAResult4" disabled rows="20"></textarea>
+    </div>
   </form>
 
 
   <!-- EJERCICIO 5 -->
-    <h2>• EJERCICIO No. 5</h2>
-    <p>Escriba una página web que pida una frase y usando Javascript, indique cuántas veces aparece cada una de las vocales.
-  Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
+  <h2>• EJERCICIO No. 5</h2>
+  <p>Escriba una página web que pida una frase y usando Javascript, indique cuántas veces aparece cada una de las vocales.
+    Juegue con CSS para que su HTML sea lo más llamativo posible.</p>
   <!-- action: quien se encarga de procesar los datos que enviaremos -->
   <!-- method: nos permite decidir porque metodo se enviara nuestra informacion ya sea por el metodo GET o POST -->
-    <form class = estiloRecuadroEje5>
-      <br>
-      <h3 class=eje5>Contador de vocales</h3>
-      <br>
-      <input class=inputEje5 type="text" name= "fraseEje5" id = "fraseEje5" placeholder="Escribe una frase">
-      <br>
-      <br>
-      <button type="button" class=botonEje5 id = "btnContarVocales">Contar Vocales</button>
-      <br>
-      <br>
-      <textarea name="txtArea" class=AreaEje5 id = "resultadoVocales" placeholder="El número de vocales es:" disabled rows="6"></textarea>
-    </form>
+  <form class=estiloRecuadroEje5>
+    <br>
+    <h3 class=eje5>Contador de vocales</h3>
+    <br>
+    <input class=inputEje5 type="text" name="fraseEje5" id="fraseEje5" placeholder="Escribe una frase">
+    <br>
+    <br>
+    <button type="button" class=botonEje5 id="btnContarVocales">Contar Vocales</button>
+    <br>
+    <br>
+    <textarea name="txtArea" class=AreaEje5 id="resultadoVocales" placeholder="El número de vocales es:" disabled rows="6"></textarea>
+  </form>
 
   <!-- EJERCICIO 6 -->
   <h2>• EJERCICIO No. 6</h2>
@@ -166,36 +171,36 @@
   <!-- EJERCICIO 7 -->
   <h2>• EJERCICIO No. 7</h2>
   <p>Escriba una página web que se conforme de un formulario en donde solicite (nombre(s), apellido(s), número de
-identificación y permita seleccionar de una lista la carrera que estudia: INGENIERÍA, MEDICINA, BIOLOGÍA, ECONOMÍA,
-MATEMÁTICAS, LITERATURA, EDUCACIÓN). Cuando la persona diligencie la información solicitada (en su totalidad), debe
-aparecer un mensaje emergente en el navegador indicando la información ingresada. Juegue con CSS para que su HTML
-sea lo más llamativo posible.</p>
+    identificación y permita seleccionar de una lista la carrera que estudia: INGENIERÍA, MEDICINA, BIOLOGÍA, ECONOMÍA,
+    MATEMÁTICAS, LITERATURA, EDUCACIÓN). Cuando la persona diligencie la información solicitada (en su totalidad), debe
+    aparecer un mensaje emergente en el navegador indicando la información ingresada. Juegue con CSS para que su HTML
+    sea lo más llamativo posible.</p>
 
-  <form class = estiloRecuadroEje7>
+  <form class=estiloRecuadroEje7>
     <h3 class=eje7>Formulario</h3>
     <br>
     <div class="Ventana" id=ventana>
       <div class="cerrar" id=cerrar><a href="Javascript:cerrar()">
-        <img src="imagenes/cancelar.png"></a>
+          <img src="imagenes/cancelar.png"></a>
       </div>
-      <textarea  name="txtArea" class=AreaEje7 id ="resultadoDatos" disabled rows="5"></textarea>
+      <textarea name="txtArea" class=AreaEje7 id="resultadoDatos" disabled rows="5"></textarea>
     </div>
-      <input class=inputEje7 type="text" name="Nombre" id="Nombres" placeholder="Ingrese su nombre" required>
-      <input class=inputEje7 type="text" name="Apellido" id="Apellidos" placeholder="Ingrese su apellido" required>
-      <input class=inputEje7 type="number" name="Identificacion" id="Identificacion" placeholder="Ingrese su identificacion" required>
-      <select class=seleccionEje7 id="carreras">
-        <option>Seleccione su carrera</option>
-        <option>Ingeniería</option>
-        <option>Medicina</option>
-        <option>Biología</option>
-        <option>Economía</option>
-        <option>Matemáticas</option>
-        <option>Literatura</option>
-        <option>Educación</option>
-      </select>
+    <input class=inputEje7 type="text" name="Nombre" id="Nombres" placeholder="Ingrese su nombre" required>
+    <input class=inputEje7 type="text" name="Apellido" id="Apellidos" placeholder="Ingrese su apellido" required>
+    <input class=inputEje7 type="number" name="Identificacion" id="Identificacion" placeholder="Ingrese su identificacion" required>
+    <select class=seleccionEje7 id="carreras">
+      <option>Seleccione su carrera</option>
+      <option>Ingeniería</option>
+      <option>Medicina</option>
+      <option>Biología</option>
+      <option>Economía</option>
+      <option>Matemáticas</option>
+      <option>Literatura</option>
+      <option>Educación</option>
+    </select>
     <br>
     <br>
-    <button type="button" class=botonEje7 id= "btnEnviarEje7">Enviar</button>
+    <button type="button" class=botonEje7 id="btnEnviarEje7">Enviar</button>
   </form>
 
   <br>

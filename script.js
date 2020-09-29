@@ -1,41 +1,62 @@
 // Ejercicio 3
 var boton5 = document.getElementById("btnContarVocales");
 var boton7 = document.getElementById("btnEnviarEje7");
+
 function ejercicio3() {
   alert("Htpa, porfin funcione como debe ser");
+}
+
+// Ejercicio 4
+var boton4 = document.getElementById("button4");
+boton4.addEventListener("click", ejercicio4);
+
+function ejercicio4() {
+  var input4 = document.getElementById("textArea4").value;
+  fraseIngresada = input4.split(" ");
+  if (fraseIngresada.length < 5) {
+    alert("La frase ingresada debe de tener mínimo cinco palabras");
+  } else {
+    textoAreaDividido = input4.split(" ");
+    numeroPalabras = fraseIngresada.length;
+    var strResult = "Hay " + numeroPalabras + " palabras."
+    document.getElementById("textAResult4").value = strResult;
+  }
+
 }
 
 // Ejercicio 5
 
 boton5.addEventListener("click", ejercicio5);
+
 function ejercicio5() {
   var input = document.getElementById("fraseEje5").value;
-    vector = input.toLowerCase().split("");
-    var a = e = i = o = u = 0;
-    for (k = 0; k < vector.length; k++) {
-      if (vector[k] == "a" || vector[k] == "A") {
-        a++;
-      } else if (vector[k] == "e" || vector[k] == "E") {
-        e++;
-      } else if (vector[k] == "i" || vector[k] == "I") {
-        i++;
-      } else if (vector[k] == "o" || vector[k] == "O") {
-        o++;
-      } else if (vector[k] == "u" || vector[k] == "U") {
-        u++;
-      }
+  vector = input.toLowerCase().split("");
+  var a = e = i = o = u = 0;
+  for (k = 0; k < vector.length; k++) {
+    if (vector[k] == "a" || vector[k] == "A") {
+      a++;
+    } else if (vector[k] == "e" || vector[k] == "E") {
+      e++;
+    } else if (vector[k] == "i" || vector[k] == "I") {
+      i++;
+    } else if (vector[k] == "o" || vector[k] == "O") {
+      o++;
+    } else if (vector[k] == "u" || vector[k] == "U") {
+      u++;
     }
-    var letraA = "Hay " + a + " vocales a\n";
-    var letraE = "Hay " + e + " vocales e\n";
-    var letraI = "Hay " + i + " vocales i\n";
-    var letraO = "Hay " + o + " vocales o\n";
-    var letraU = "Hay " + u + " vocales u\n";
-    texto = letraA + letraE + letraI + letraO + letraU;
-    document.getElementById("resultadoVocales").value = texto;
+  }
+  var letraA = "Hay " + a + " vocales a\n";
+  var letraE = "Hay " + e + " vocales e\n";
+  var letraI = "Hay " + i + " vocales i\n";
+  var letraO = "Hay " + o + " vocales o\n";
+  var letraU = "Hay " + u + " vocales u\n";
+  texto = letraA + letraE + letraI + letraO + letraU;
+  document.getElementById("resultadoVocales").value = texto;
 }
 
 //Ejercicio 7
 boton7.addEventListener("click", ejercicio7);
+
 function ejercicio7() {
   var nombre = document.getElementById("Nombres").value;
   var apellido = document.getElementById("Apellidos").value;

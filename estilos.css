@@ -212,83 +212,124 @@ input[type="button"]:hover {
 }
 
 /* 4 EJERCICIO */
-.form_4 label {
-  font-size: 16px;
-  margin-bottom: 10px;
+.form_4 {
+  margin: auto;
+  background-color: #E6D7C7;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  padding-top: 20px;
 }
 
-.form_4 textarea {
+.div_interno_4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form_4 label {
+  display: block;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+.textArea4 {
+  width: 350px;
+  height: 100px;
   background-color: #FCDEC9;
   border-color: black;
   border-radius: 4px;
+  font-size: 18px;
+  font-family: "Times New Roman";
+  background-color: #FCEFE1;
+}
+
+.textAResult4 {
+  width: 350px;
+  height: 50px;
+  background-color: #FCDEC9;
+  border-color: black;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Times New Roman";
+  background-color: #FCEFE1;
+  color: black;
 }
 
 .form_4 button {
-  background-color: #D4716C;
-  border-color: #D4716C;
+  background-color: #09B7B2;
+  border-color: #09B7B2;
   padding: 5px;
   border-radius: 4px;
+  width: 80px;
+  height: 30px;
 }
 
-.form_4 {
-  background-color: #ECC8B0;
-}
-
-.estiloRecuadroEje5{
+.estiloRecuadroEje5 {
   width: 250px;
   height: 360px;
-  background-image:url("imagenes/fondoVocales.jpg");
+  background-image: url("imagenes/fondoVocales.jpg");
   margin: auto;
   text-align: center;
   border-radius: 12px;
   box-shadow: 7px 15px 40px #000;
 }
-.eje5{
+
+.eje5 {
   text-align: center;
   font-weight: bold;
   font-size: 22px;
-  font-family:"Times New Roman" ;
+  font-family: "Times New Roman";
   color: #2079b0;
   margin: auto;
-  background-color:white;
+  background-color: white;
   width: 85%;
 }
-.AreaEje5{
-  font-family:"Times New Roman" ;
+
+.AreaEje5 {
+  font-family: "Times New Roman";
   font-size: 20px;
-  border:#2AA1DD 8px outset;
+  border: #2AA1DD 8px outset;
   resize: none;
   width: 85%;
   height: 150px;
   background-color: white;
 }
-.botonEje5{
-width: 85%;
-background: #eb94d0;
+
+.botonEje5 {
+  width: 85%;
+  background: #eb94d0;
   /* Crear degradados */
-background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
-
-font-family:"Times New Roman" ;
-font-size: 20px;
-
-color: #fafafa;
-padding: 10px;
-text-decoration: none;
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  font-family: "Times New Roman";
+  font-size: 20px;
+  color: #fafafa;
+  padding: 10px;
+  text-decoration: none;
 }
-.inputEje5{
+
+.inputEje5 {
   width: 85%;
   height: 40px;
-  font-family:"Times New Roman" ;
+  font-family: "Times New Roman";
   font-size: 20px;
 }
 
 /* 6 EJERCICIO */
+.form_calculadora {
+  width: 450px;
+  height: 215px;
+  margin: auto;
+  border-style: ridge;
+  padding: 20px;
+}
+
 .calculadora_grid {
   display: grid;
+  padding-top: 10px;
   grid-template-columns: repeat(auto-fit, 85px);
   grid-auto-rows: 25px;
   grid-gap: 1rem;
