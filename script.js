@@ -7,20 +7,21 @@ var btnCantPrimos = document.getElementById("btnCantPrimos");
 var btnPromedioPares = document.getElementById("btnPromedioPares");
 var resultadoParaNumeros = document.getElementById("resultadoNumeros");
 
-function numerosOrganizados(){
+function numerosOrganizados() {
   var numerosIngresados = document.getElementById("numerosIngresados").value;
-  if (numerosIngresados.length==0) {
+  if (numerosIngresados.length == 0) {
     alert("Debe poner numeros en el campo para hacer la operación.")
-  }else{
+  } else {
     numeros = numerosIngresados.split(", ");
-    ordenadosMenor_aMayor = numeros.sort((a,b) => a-b);
+    ordenadosMenor_aMayor = numeros.sort((a, b) => a - b);
     return parseInt(ordenadosMenor_aMayor);
   }
 }
 
 // Numero menor
 btnMenor.addEventListener("click", numeroMenor);
-function numeroMenor(){
+
+function numeroMenor() {
   numerosOrganizados();
   var numMenor = ordenadosMenor_aMayor[0];
   resultadoParaNumeros.value = "El numero menor es: " + numMenor;
@@ -28,15 +29,17 @@ function numeroMenor(){
 
 // Numero mayor
 btnMayor.addEventListener("click", numeroMayor);
-function numeroMayor(){
+
+function numeroMayor() {
   numerosOrganizados();
-  var numMayor = ordenadosMenor_aMayor[numeros.length-1];
+  var numMayor = ordenadosMenor_aMayor[numeros.length - 1];
   resultadoParaNumeros.value = "El numero mayor es: " + numMayor;
 }
 
 // Numero de primos
 btnCantPrimos.addEventListener("click", cantPrimos);
-function cantPrimos(){
+
+function cantPrimos() {
   numerosOrganizados();
   var numerosPrimos = [];
   var contador = 0;
@@ -52,12 +55,12 @@ function cantPrimos(){
 function primo(numero) {
   var a = true;
   var aux = 2;
-  if(numero == 1){
+  if (numero == 1) {
     a = false;
   }
-  while (aux < numero ){
-    if(numero % aux == 0){
-      a=false;
+  while (aux < numero) {
+    if (numero % aux == 0) {
+      a = false;
     }
     aux++;
   }
@@ -66,18 +69,19 @@ function primo(numero) {
 
 // Promedio de numeros pares
 btnPromedioPares.addEventListener("click", promedioPares);
-function promedioPares(){
+
+function promedioPares() {
   numerosOrganizados();
   var suma = 0;
   var promedio = 0;
   var dividendo = 0;
-  for (var i=0; i < numeros.length; i++){
-    if(numeros[i]%2 == 0){
+  for (var i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 == 0) {
       suma = parseInt(suma) + parseInt(numeros[i]);
       dividendo++;
     }
   }
-  promedio = suma/dividendo;
+  promedio = suma / dividendo;
   resultadoParaNumeros.value = "El promedio de numeros pares es: " + promedio;
 }
 
@@ -87,20 +91,32 @@ boton4.addEventListener("click", ejercicio4);
 
 function ejercicio4() {
   var input4 = document.getElementById("textArea4").value;
+  var inputLength = input4.length;
   fraseIngresada = input4.split(" ");
   if (fraseIngresada.length < 5) {
     alert("La frase ingresada debe de tener mínimo cinco palabras");
   } else {
-    textoAreaDividido = input4.split(" ");
-    numeroPalabras = fraseIngresada.length;
-    var strResult = "Hay " + numeroPalabras + " palabras."
-    document.getElementById("textAResult4").value = strResult;
+    if (input4.charAt(inputLength - 1) == " " || input4.charAt(0) == " ") {
+      textoAreaDividido = input4.split(" ");
+      numeroPalabras = fraseIngresada.length - 1;
+      var strResult = "Hay " + numeroPalabras + " palabras."
+      document.getElementById("textAResult4").value = strResult;
+      document.getElementById("textArea4").value = null;
+    } else {
+      textoAreaDividido = input4.split(" ");
+      numeroPalabras = fraseIngresada.length;
+      var strResult = "Hay " + numeroPalabras + " palabras."
+      document.getElementById("textAResult4").value = strResult;
+      document.getElementById("textArea4").value = null;
+    }
   }
 }
+
 
 // Ejercicio 5
 var boton5 = document.getElementById("btnContarVocales");
 boton5.addEventListener("click", ejercicio5);
+
 function ejercicio5() {
   var input = document.getElementById("fraseEje5").value;
   vector = input.toLowerCase().split("");
@@ -131,6 +147,7 @@ function ejercicio5() {
 // Ejercicio 7
 var boton7 = document.getElementById("btnEnviarEje7");
 boton7.addEventListener("click", ejercicio7);
+
 function ejercicio7() {
   var nombre = document.getElementById("Nombres").value;
   var apellido = document.getElementById("Apellidos").value;
