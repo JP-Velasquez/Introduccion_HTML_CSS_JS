@@ -272,7 +272,7 @@ input[type="button"]:hover {
 
 .estiloRecuadroEje5 {
   width: 250px;
-  height: 360px;
+  height: 370px;
   background-image: url("imagenes/fondoVocales.jpg");
   margin: auto;
   text-align: center;
@@ -313,7 +313,7 @@ input[type="button"]:hover {
   font-family: "Times New Roman";
   font-size: 20px;
   color: #fafafa;
-  padding: 10px;
+  padding: 7px;
   text-decoration: none;
 }
 
@@ -395,7 +395,7 @@ input[type="button"]:hover {
 
 .estiloRecuadroEje7 {
   width: 500px;
-  height: 350px;
+  height: 360px;
   background: #24303c;
   background-image: url("imagenes/fondoFormulario.jpg");
   padding: 20px;

@@ -122,15 +122,15 @@ function ejercicio5() {
   vector = input.toLowerCase().split("");
   var a = e = i = o = u = 0;
   for (k = 0; k < vector.length; k++) {
-    if (vector[k] == "a" || vector[k] == "A") {
+    if (vector[k] == "a" || vector[k] == "A"|| vector[k] == "á" || vector[k] == "Á") {
       a++;
-    } else if (vector[k] == "e" || vector[k] == "E") {
+    } else if (vector[k] == "e" || vector[k] == "E"|| vector[k] == "É"|| vector[k] == "é") {
       e++;
-    } else if (vector[k] == "i" || vector[k] == "I") {
+    } else if (vector[k] == "i" || vector[k] == "I"||vector[k] == "í" || vector[k] == "Í") {
       i++;
-    } else if (vector[k] == "o" || vector[k] == "O") {
+    } else if (vector[k] == "o" || vector[k] == "O"||vector[k] == "ó" || vector[k] == "Ó") {
       o++;
-    } else if (vector[k] == "u" || vector[k] == "U") {
+    } else if (vector[k] == "u" || vector[k] == "U"||vector[k] == "ú" || vector[k] == "Ú") {
       u++;
     }
   }
