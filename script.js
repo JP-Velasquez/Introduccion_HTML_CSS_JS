@@ -166,36 +166,47 @@ var boton_ej6_igual = document.getElementById("botonIgual");
 var boton_ej6_dividir = document.getElementById("botonDividr");
 
 var resultado = document.getElementById("resultadoCalculadora");
+var mostrarOperacion = document.getElementById("spanOperacion");
 
 boton_ej6_1.onclick = function(e) {
   resultado.textContent = resultado.textContent + "1";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_2.onclick = function(e) {
   resultado.textContent = resultado.textContent + "2";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_3.onclick = function(e) {
   resultado.textContent = resultado.textContent + "3";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_4.onclick = function(e) {
   resultado.textContent = resultado.textContent + "4";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_5.onclick = function(e) {
   resultado.textContent = resultado.textContent + "5";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_6.onclick = function(e) {
   resultado.textContent = resultado.textContent + "6";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_7.onclick = function(e) {
   resultado.textContent = resultado.textContent + "7";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_8.onclick = function(e) {
   resultado.textContent = resultado.textContent + "8";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_9.onclick = function(e) {
   resultado.textContent = resultado.textContent + "9";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_0.onclick = function(e) {
   resultado.textContent = resultado.textContent + "0";
+  mostrarOperacion.textContent = "";
 }
 boton_ej6_reset.onclick = function(e) {
   resetear();
@@ -204,35 +215,42 @@ boton_ej6_mas.onclick = function(e) {
   numero1 = resultado.textContent;
   operacion = "+";
   limpiar();
+  mostrarOperacion.textContent = "+";
 }
 boton_ej6_menos.onclick = function(e) {
   numero1 = resultado.textContent;
   operacion = "-";
   limpiar();
+  mostrarOperacion.textContent = "-";
 }
 boton_ej6_por.onclick = function(e) {
   numero1 = resultado.textContent;
   operacion = "*";
   limpiar();
+  mostrarOperacion.textContent = "*";
 }
 boton_ej6_dividir.onclick = function(e) {
   numero1 = resultado.textContent;
   operacion = "/";
   limpiar();
+  mostrarOperacion.textContent = "/";
 }
 boton_ej6_igual.onclick = function(e) {
   numero2 = resultado.textContent;
+  mostrarOperacion.textContent = "";
   resolver();
 }
 
 // Poner vacio el resultado
 function limpiar() {
   resultado.textContent = "";
+  mostrarOperacion.textContent = "";
 }
 
 // Resetar las variables operandoA, operandoB y operacion
 function resetear() {
   resultado.textContent = "";
+  mostrarOperacion.textContent = "";
   numero1 = 0;
   numero2 = 0;
   operacion = "";

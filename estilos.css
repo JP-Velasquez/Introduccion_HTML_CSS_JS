@@ -340,6 +340,15 @@ input[type="button"]:hover {
   padding-right: 15px;
 }
 
+.spanOperacion {
+  border-style: ridge;
+  height: 35px;
+  text-align: left;
+  font-size: 24px;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
 .calculadora_grid {
   display: grid;
   padding-top: 10px;
