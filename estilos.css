@@ -1,6 +1,6 @@
 /* Titulo Principal */
 h1 {
-  text-align: left;
+  text-align: center;
   font-size: 50px;
 }
 
@@ -17,9 +17,11 @@ h3 {
   font-weight: bold;
   font-size: 25px;
 }
-
+.pie{
+  font-size: 15px;
+}
 /*Texto, parrafo*/
-p {
+dd {
   text-align: left;
   font-size: 20px;
 }
