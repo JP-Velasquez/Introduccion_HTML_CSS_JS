@@ -1,465 +1,498 @@
 /* Titulo Principal */
+
 h1 {
-  text-align: center;
-  font-size: 50px;
+    text-align: center;
+    font-size: 50px;
 }
 
+
 /* Subtitulos */
+
 h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 30px;
-  text-decoration: underline;
+    text-align: left;
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 h3 {
-  text-align: left;
-  font-weight: bold;
-  font-size: 25px;
-}
-.pie{
-  font-size: 15px;
-}
-/*Texto, parrafo*/
-dd {
-  text-align: left;
-  font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
 }
 
+.pie {
+    font-size: 15px;
+}
+
+
+/*Texto, parrafo*/
+
+dd {
+    text-align: left;
+    font-size: 20px;
+}
+
+
 /* EJERCICIO 1 */
+
 table {
-  border: 2.5px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-  width: 70%;
+    border: 2.5px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
 }
 
 table td {
-  border: 2px solid #000;
-  padding: 10px;
+    border: 2px solid #000;
+    padding: 10px;
 }
 
 table tr:hover {
-  background: #A0ECA6;
+    background: #A0ECA6;
 }
 
 table td:hover {
-  background: #009C17;
-  color: white;
-  font-size: 107%;
+    background: #009C17;
+    color: white;
+    font-size: 107%;
 }
 
+
 /* EJERCICIO 2 */
+
 div #rojo {
-  width: 130px;
-  height: 342px;
-  background: red;
-  border: 1px solid black;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 18px;
-  color: black;
+    width: 130px;
+    height: 342px;
+    background: red;
+    border: 1px solid black;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
 }
 
 div #rojo:hover {
-  background: rgb(255, 92, 92);
-  color: black;
-  font-size: 105%;
+    background: rgb(255, 92, 92);
+    color: black;
+    font-size: 105%;
 }
 
 div #azul {
-  width: 350px;
-  height: 130px;
-  background: blue;
-  border: 1px solid black;
-  display: inline-block;
-  position: relative;
-  right: 5.2px;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
+    width: 350px;
+    height: 130px;
+    background: blue;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    right: 5.2px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }
 
 div #azul:hover {
-  background: rgb(13, 129, 255);
-  color: black;
-  font-size: 105%;
+    background: rgb(13, 129, 255);
+    color: black;
+    font-size: 105%;
 }
 
 div #negro {
-  width: 211.7px;
-  height: 211.7px;
-  background: black;
-  border: 1px solid black;
-  display: inline-block;
-  position: relative;
-  top: 131px;
-  right: 361px;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
+    width: 211.7px;
+    height: 211.7px;
+    background: black;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    top: 131px;
+    right: 361px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }
 
 div #negro:hover {
-  background: rgb(71, 71, 71);
-  color: white;
-  font-size: 105%;
+    background: rgb(71, 71, 71);
+    color: white;
+    font-size: 105%;
 }
 
 div #amarillo {
-  width: 138px;
-  height: 330px;
-  background: rgb(252, 221, 54);
-  border: 1px solid black;
-  display: inline-block;
-  position: relative;
-  top: 131px;
-  right: 365px;
-  font-weight: bold;
-  font-size: 18px;
-  color: black;
+    width: 138px;
+    height: 330px;
+    background: rgb(252, 221, 54);
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    top: 131px;
+    right: 365px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
 }
 
 div #amarillo:hover {
-  background: yellow;
-  color: black;
-  font-size: 105%;
+    background: yellow;
+    color: black;
+    font-size: 105%;
 }
 
 div #verde {
-  background: green;
-  width: 343px;
-  height: 117px;
-  border: 1px solid black;
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
+    background: green;
+    width: 343px;
+    height: 117px;
+    border: 1px solid black;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }
 
 div #verde:hover {
-  background: rgb(51, 255, 0);
-  color: black;
-  font-size: 105%;
+    background: rgb(51, 255, 0);
+    color: black;
+    font-size: 105%;
 }
 
+
 /* EJERCICIO 3 */
+
 .instruccionesEjer3 {
-  text-align: center;
+    text-align: center;
 }
 
 .formularioEjer3 {
-  width: 300px;
-  height: 370px;
-  background-image: url("imagenes/ejer3.png");
-  border: 2px solid black;
-  margin: auto;
-  padding: 20px;
-  padding-bottom: 80px;
+    width: 300px;
+    height: 370px;
+    background-image: url("imagenes/ejer3.png");
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 80px;
 }
 
 .tituloEjer3 {
-  font-size: 19.5px;
-  display: block;
-  width: 100%;
-  font-weight: bold;
+    font-size: 19.5px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
 }
 
 .subTituloEjer3 {
-  font-size: 18px;
-  display: block;
-  width: 100%;
-  text-decoration: underline;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-decoration: underline;
 }
 
 #tituloPulseBtnEjer3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #tituloResultadoEjer3 {
-  margin-top: 10px
+    margin-top: 10px
 }
 
 .tituloBtnEjer3 {
-  font-size: 17px;
-  display: block;
-  width: 100%;
-  margin: auto;
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    margin: auto;
 }
 
 textarea {
-  resize: none;
-  height: 70px;
+    resize: none;
+    height: 70px;
 }
 
-input, textarea {
-  margin-bottom: 10px;
-  font-size: 18px;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+input,
+textarea {
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
-  border: 3.5px solid #0c9800;
+input:focus,
+textarea:focus {
+    border: 3.5px solid #0c9800;
 }
 
 input[type="button"] {
-  font-size: 14px;
-  margin: 0px;
-  background: #0c70df;
-  color: white;
-  border: none;
+    font-size: 14px;
+    margin: 0px;
+    background: #0c70df;
+    color: white;
+    border: none;
 }
 
 input[type="button"]:hover {
-  background: #1383ff;
-  cursor: pointer;
+    background: #1383ff;
+    cursor: pointer;
 }
 
+
 /* 4 EJERCICIO */
+
 .form_4 {
-  margin: auto;
-  background-color: #E6D7C7;
-  width: 400px;
-  height: 300px;
-  text-align: center;
-  padding-top: 20px;
+    margin: auto;
+    background-color: #E6D7C7;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .div_interno_4 {
-  text-align: center;
-  padding-top: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .form_4 label {
-  display: block;
-  padding-bottom: 8px;
-  font-weight: bold;
+    display: block;
+    padding-bottom: 8px;
+    font-weight: bold;
 }
 
 .textArea4 {
-  width: 350px;
-  height: 100px;
-  background-color: #FCDEC9;
-  border-color: black;
-  border-radius: 4px;
-  font-size: 18px;
-  font-family: "Times New Roman";
-  background-color: #FCEFE1;
+    width: 350px;
+    height: 100px;
+    background-color: #FCDEC9;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Times New Roman";
+    background-color: #FCEFE1;
 }
 
 .textAResult4 {
-  width: 350px;
-  height: 50px;
-  background-color: #FCDEC9;
-  border-color: black;
-  border-radius: 4px;
-  font-size: 18px;
-  font-family: "Times New Roman";
-  background-color: #FCEFE1;
-  color: black;
+    width: 350px;
+    height: 50px;
+    background-color: #FCDEC9;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Times New Roman";
+    background-color: #FCEFE1;
+    color: black;
 }
 
 .form_4 button {
-  background-color: #09B7B2;
-  border-color: #09B7B2;
-  padding: 5px;
-  border-radius: 4px;
-  width: 80px;
-  height: 30px;
+    background-color: #09B7B2;
+    border-color: #09B7B2;
+    padding: 5px;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
 }
 
 .estiloRecuadroEje5 {
-  width: 250px;
-  height: 370px;
-  background-image: url("imagenes/fondoVocales.jpg");
-  margin: auto;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 7px 15px 40px #000;
+    width: 250px;
+    height: 370px;
+    background-image: url("imagenes/fondoVocales.jpg");
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 7px 15px 40px #000;
 }
 
 .eje5 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 22px;
-  font-family: "Times New Roman";
-  color: #2079b0;
-  margin: auto;
-  background-color: white;
-  width: 85%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Times New Roman";
+    color: #2079b0;
+    margin: auto;
+    background-color: white;
+    width: 85%;
 }
 
 .AreaEje5 {
-  font-family: "Times New Roman";
-  font-size: 20px;
-  border: #2AA1DD 8px outset;
-  resize: none;
-  width: 85%;
-  height: 150px;
-  background-color: white;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    border: #2AA1DD 8px outset;
+    resize: none;
+    width: 85%;
+    height: 150px;
+    background-color: white;
 }
 
 .botonEje5 {
-  width: 85%;
-  background: #eb94d0;
-  /* Crear degradados */
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
-  font-family: "Times New Roman";
-  font-size: 20px;
-  color: #fafafa;
-  padding: 7px;
-  text-decoration: none;
+    width: 85%;
+    background: #eb94d0;
+    /* Crear degradados */
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: #fafafa;
+    padding: 7px;
+    text-decoration: none;
 }
 
 .inputEje5 {
-  width: 85%;
-  height: 40px;
-  font-family: "Times New Roman";
-  font-size: 20px;
+    width: 85%;
+    height: 40px;
+    font-family: "Times New Roman";
+    font-size: 20px;
 }
 
+
 /* 6 EJERCICIO */
+
 .form_calculadora {
-  width: 450px;
-  height: 215px;
-  margin: auto;
-  border-style: ridge;
-  padding: 20px;
+    width: 450px;
+    height: 215px;
+    margin: auto;
+    border-style: ridge;
+    padding: 20px;
 }
 
 .recuadroResultado6 {
-  border-style: ridge;
-  height: 35px;
-  text-align: right;
-  font-size: 24px;
-  padding-top: 5px;
-  padding-right: 15px;
+    border-style: ridge;
+    height: 35px;
+    text-align: right;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-right: 15px;
 }
 
 .spanOperacion {
-  border-style: ridge;
-  height: 35px;
-  text-align: left;
-  font-size: 24px;
-  padding-top: 5px;
-  padding-right: 15px;
+    border-style: ridge;
+    height: 35px;
+    text-align: left;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-right: 15px;
 }
 
 .calculadora_grid {
-  display: grid;
-  padding-top: 10px;
-  grid-template-columns: repeat(auto-fit, 85px);
-  grid-auto-rows: 25px;
-  grid-gap: 1rem;
-  justify-content: space-between;
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: repeat(auto-fit, 85px);
+    grid-auto-rows: 25px;
+    grid-gap: 1rem;
+    justify-content: space-between;
 }
 
 .botonReset {
-  background-color: #FE8611;
-  border-color: #FE8611;
-  border-radius: 5px;
+    background-color: #FE8611;
+    border-color: #FE8611;
+    border-radius: 5px;
 }
 
 .botonIgual {
-  background-color: #D7A099;
-  border-color: #D7A099;
-  border-radius: 5px;
+    background-color: #D7A099;
+    border-color: #D7A099;
+    border-radius: 5px;
 }
 
-.botonMas, .botonDividr, .botonMenos, .botonPor {
-  background-color: #57BAAC;
-  border-color: #57BAAC;
-  border-radius: 5px;
+.botonMas,
+.botonDividr,
+.botonMenos,
+.botonPor {
+    background-color: #57BAAC;
+    border-color: #57BAAC;
+    border-radius: 5px;
 }
 
-.boton0, .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8, .boton9 {
-  background-color: #A4BCDF;
-  border-color: #A4BCDF;
-  border-radius: 5px;
+.boton0,
+.boton1,
+.boton2,
+.boton3,
+.boton4,
+.boton5,
+.boton6,
+.boton7,
+.boton8,
+.boton9 {
+    background-color: #A4BCDF;
+    border-color: #A4BCDF;
+    border-radius: 5px;
 }
+
 
 /* 7 EJERCICIO */
+
 .eje7 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: "Times New Roman";
-  color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Times New Roman";
+    color: white;
 }
 
 .estiloRecuadroEje7 {
-  width: 500px;
-  height: 360px;
-  background: #24303c;
-  background-image: url("imagenes/fondoFormulario.jpg");
-  padding: 20px;
-  margin: auto;
-  border-radius: 12px;
-  box-shadow: 7px 15px 40px #000;
+    width: 500px;
+    height: 360px;
+    background: #24303c;
+    background-image: url("imagenes/fondoFormulario.jpg");
+    padding: 20px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 7px 15px 40px #000;
 }
 
 .botonEje7 {
-  font-family: "Times New Roman";
-  font-size: 20px;
+    font-family: "Times New Roman";
+    font-size: 20px;
 }
 
 .inputEje7 {
-  width: 280px;
-  height: 20px;
-  font-family: "Times New Roman";
-  font-size: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 6px;
+    width: 280px;
+    height: 20px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 6px;
 }
 
 .botonEje7 {
-  width: 100%;
-  border: none;
-  padding: 3px;
-  border-radius: 8px;
+    width: 100%;
+    border: none;
+    padding: 3px;
+    border-radius: 8px;
 }
 
 .seleccionEje7 {
-  width: 280px;
-  height: 45px;
-  border-radius: 8px;
-  font-family: "Times New Roman";
-  font-size: 20px;
+    width: 280px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: "Times New Roman";
+    font-size: 20px;
 }
 
 .Ventana {
-  background: -prefix-linear-gradient(top, green, yellow);
-  background: linear-gradient(to bottom, green, yellow);
-  width: 300px;
-  height: 130px;
-  padding: 10px;
-  border-radius: 20px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  display: none;
+    background: -prefix-linear-gradient(top, green, yellow);
+    background: linear-gradient(to bottom, green, yellow);
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    display: none;
 }
 
 .cerrar {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 .AreaEje7 {
-  position: relative;
-  width: 265px;
-  height: 120px;
-  background: transparent;
-  color: black;
-  font-family: "Times New Roman";
-  font-size: 20px;
-  border: none;
+    position: relative;
+    width: 265px;
+    height: 120px;
+    background: transparent;
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    border: none;
 }
